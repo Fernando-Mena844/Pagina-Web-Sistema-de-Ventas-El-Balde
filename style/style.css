@@ -199,7 +199,7 @@ h1{
 
 .btn-hero {
     display: inline-block;
-    background: #6c8f3d; /* verde oliva */
+    background: #6c8f3d; /* verde oliva xd */
     opacity: 0.5;
     border: black;
     color: white;
@@ -215,4 +215,17 @@ h1{
 }
 
 
+/* Fin del css para el contenido principal del index */
+/* Inicio del css para el contenido principal de acerca de */
 
+.acercade{
+    color: black    ;
+}
+/* fin del css para aceca de lol */
+
+/* Inicio del css para el contenido principal de contacto */
+.contacto-body {
+    color: black;
+}
+
+/* Tarjeta */
