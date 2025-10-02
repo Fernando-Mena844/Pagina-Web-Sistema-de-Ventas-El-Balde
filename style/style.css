@@ -229,3 +229,17 @@ h1{
 }
 
 /* Tarjeta */
+
+/* fin del css para el content de contacto */
+
+
+/* inicio del content de descarga :) */
+.descargas-body{
+    color: black;
+}
+
+
+/* Centra el carousel */
+.container-carousel{
+    display: flexbox;
+}
