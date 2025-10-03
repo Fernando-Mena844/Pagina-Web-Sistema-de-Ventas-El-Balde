@@ -238,8 +238,3 @@ h1{
     color: black;
 }
 
-
-/* Centra el carousel */
-.container-carousel{
-    display: flexbox;
-}

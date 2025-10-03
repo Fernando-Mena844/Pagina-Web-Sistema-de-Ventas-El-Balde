@@ -1,3 +1,5 @@
+
+//animacion del sidebar C:
 const toggleBtn = document.querySelector('.sidebar-toggle')
 const closeBtn = document.querySelector('.close-btn')
 const sidebar = document.querySelector('.sidebar')

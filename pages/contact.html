@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto | Comedor El Balde</title>
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+    crossorigin="anonymous">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="shortcut icon" href="../img/El balde logo.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/cf9beab4c7.js" crossorigin="anonymous"></script>
@@ -34,6 +38,116 @@
     </aside>
 
     <!--Contenido principal de contacto-->
+    <div class="container py-5">
+<div class="row g-4">
+    <!-- Tarjeta Descripción -->
+    
+<div class="container py-5">
+<div class="row g-4">
+<div class="col-md-6 col-lg-4">
+    <div class="card shadow h-100">
+        <div class="card-body">
+        <h5 class="card-title">El Balde</h5>
+        <p class="card-text">
+        El comedor “El Balde” está ubicado en el puesto 2A4 del Mercado Tinetti, en San Salvador. Es administrado por el señor Isaac Valencia,  y comenzó a funcionar el 20 de agosto de 2025. Se dedica a la venta de alimentos dentro del mercado, atendiendo a los clientes de la zona en un espacio sencillo y accesible. 
+        </p>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- Tarjeta Contacto -->
+    <div class="col-md-6 col-lg-4">
+    <div class="card shadow h-100 text-center">
+        <div class="card-body">
+        <h5 class="card-title">Contáctanos</h5>
+        <p><i class="bi bi-instagram"></i> @elbalde2025</p>
+        <p><i class="bi bi-envelope"></i> contacto elbalde2025@gmail.com</p>
+        <p><i class="bi bi-telephone"></i> +503 7574-1027</p>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- Tarjeta Formulario -->
+    <div class="col-md-6 col-lg-4">
+    <div class="card shadow h-100">
+        <div class="card-body">
+        <h5 class="card-title">¡Déjanos tus datos!</h5>
+
+        <form id="contactForm">
+    <div class="mb-3">
+    <input type="text" id="nombre" class="form-control" placeholder="Nombre y Apellido" required>
+    <div class="invalid-feedback">Solo se permiten letras y espacios.</div>
+    </div>
+    <div class="mb-3">
+    <input type="email" id="correo" class="form-control" placeholder="Correo electrónico" required>
+    <div class="invalid-feedback">Por favor ingresa un correo válido.</div>
+    </div>
+    <button type="submit" class="btn btn-danger w-100">Enviar</button>
+    </form>
+
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+
+
+
+
+<!-- JS para el formulario y validaciones :)-->
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const nombreInput = document.getElementById("nombre");
+    const nombreValor = nombreInput.value.trim();
+
+    //solo letras (mayúsculas/minúsculas) y espacios
+    const regexNombre = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/;
+
+    if(!regexNombre.test(nombreValor)){
+    nombreInput.classList.add("is-invalid");
+      return; // Detiene el envío
+    } else {
+    nombreInput.classList.remove("is-invalid");
+    }
+
+    alert("¡Gracias por dejarnos tus datos! Te contactaremos pronto.");
+    this.reset();
+});
+</script>
+
+    <!-- Tarjeta con mapa -->
+    <div class="col-12">
+    <div class="card shadow">
+        <div class="card-body">
+        <h5 class="card-title">Encuéntranos</h5>
+        <p class="card-text">
+            Estamos ubicados en el Mercado San Miguelito, San Salvador.  
+            Ven a visitarnos y disfruta de un ambiente único.
+        </p>
+        <!-- Mapa-->
+        <div class="ratio ratio-16x9">
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.123456789!2d-89.207!3d13.705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x123456789abcdef!2sMercado%20San%20Miguelito!5e0!3m2!1ses!2ssv!4v1696350000000" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        </div>
+    </div>
+    </div>
+
+</div>
+</div>
+
+
     
 
 
@@ -42,5 +156,7 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="../script.js"></script>
+<!-- iconos pa las tarjetas -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"> 
 </body>
 </html>
