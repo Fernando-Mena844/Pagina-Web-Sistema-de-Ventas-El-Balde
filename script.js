@@ -11,3 +11,7 @@ toggleBtn.addEventListener('click', function () {
 closeBtn.addEventListener('click', function () {
     sidebar.classList.remove('show-sidebar')
 })
+
+document.getElementById("downloadBtn").addEventListener("click", function () {
+    document.getElementById("downloadLink").click();
+});
