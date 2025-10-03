@@ -21,10 +21,22 @@
     font-size: 1.2rem;
 }
 
-
-
+footer{
+    background-color: #42532a;
+    color: whitesmoke;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    opacity: 0.7;
+    bottom: 0;
+    width: 100%;
+    font-size: 15px;
+}
 
 /* Este code es para todo el sitio web */
+
+
+
 /* Es la sidebar */
 body {
     background-color: #faf3e0;
@@ -220,12 +232,14 @@ h1{
 
 .acercade{
     color: black    ;
+    padding-bottom: 30px;
 }
 /* fin del css para aceca de lol */
 
 /* Inicio del css para el contenido principal de contacto */
 .contacto-body {
     color: black;
+    padding-bottom: 45px;
 }
 
 /* Tarjeta */
@@ -236,5 +250,6 @@ h1{
 /* inicio del content de descarga :) */
 .descargas-body{
     color: black;
+    padding-bottom: 45px;
 }
 
